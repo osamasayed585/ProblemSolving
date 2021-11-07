@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Coins {
 
+    // this is a new problem her name "Coins"
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a =0;
