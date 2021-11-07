@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Suffix_Three {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
 
@@ -20,12 +19,10 @@ public class Suffix_Three {
                 } else if (word.substring(length - 5).equals("mnida")) {
                     System.out.println("KOREAN");
                 }
-
             } else {
                 System.out.println("FILIPINO");
             }
         }
-
     }
 }
 
