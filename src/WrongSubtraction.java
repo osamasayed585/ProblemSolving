@@ -7,20 +7,28 @@ public class WrongSubtraction {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String num = scanner.next();
+        int num = scanner.nextInt();
         int operation = scanner.nextInt();
 
         for (int i=0; i<operation; i++){
-
-            int length = num.toCharArray().length;
-            String lastNum = num.substring(length - 1);
-
-            if (lastNum.equals("0")){
-                 num = Integer.parseInt(num) / 10 + "";
-            }else{
-                 num = Integer.parseInt(num) - 1+"";
+            //antherAnswer();
+            if (num%10 == 0){
+                num /= 10;
+                continue;
             }
+            num--;
         }
         System.out.println(num);
     }
+
+//    private static void antherAnswer() {
+//        int length = num.toCharArray().length;
+//        String lastNum = num.substring(length - 1);
+//
+//        if (lastNum.equals("0")){
+//            num = Integer.parseInt(num) / 10 + "";
+//        }else{
+//            num = Integer.parseInt(num) - 1+"";
+//        }
+//    }
 }
