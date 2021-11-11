@@ -7,12 +7,12 @@ public class SumOfDigits {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String num = scanner.next();  // 9 9 1
+        String num = scanner.next();
         if (num.length() == 1) {
             System.out.println(0);
             return;
         }
-        char[] digits = num.toCharArray();  // {9,9,1}
+        char[] digits = num.toCharArray();
         int sum =0;
 
         for (int i = 0; i < num.length(); i++) {
